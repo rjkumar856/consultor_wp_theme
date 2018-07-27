@@ -1,0 +1,116 @@
+/* Theme-specific rules for the WP Editor */
+
+/*Tooltips*/
+.trx_addons_tooltip:before {
+    padding: 0.3em 1em;
+}
+
+/* Dropcaps */
+.trx_addons_dropcap {
+    font-size: 2.4rem;
+    font-family: Poppins;
+    width: 1.667em;
+    height: 1.667em;
+    line-height: 1.7em;
+    margin: 0.2em 0.5em 0 0;
+}
+
+
+/*Lists*/
+ol {
+    list-style: none;
+    counter-reset: num;
+}
+li {
+    position: relative;
+    margin-bottom: 8px;
+}
+ul li ol {
+    margin-top: 8px;
+}
+ol>li::before {
+    content: counter(num) '. ';
+    counter-increment: num;
+    position: absolute;
+    font-size: 15px;
+    left: -1.1em;
+    font-weight: 400;
+    color: #98cb2b;
+}
+ul[class*="trx_addons_list_dot"] > li:before {
+    font-size: 23px !important;
+    left: -0.8em !important;
+    line-height: 26px !important;
+}
+ul[class*="trx_addons_list_custom"] > li:before {
+    font-size: 20px;
+    font-weight: 600;
+    top: 1px;
+    left: -0.9em;
+}
+ul[class*="trx_addons_list_arrow"] {
+    padding-left: 1.5em !important;
+}
+ul[class*="trx_addons_list_arrow"] > li:before {
+    content: '\E911';
+    font-family: fontello;
+    color: #296d75 !important;
+    left: -1.5em !important;
+    top: 1px;
+}
+ul[class*="trx_addons_list_arrow_circled"] > li:before {
+    content: '\e884';
+    font-family: 'trx_addons_icons';
+    color: #98cb2b !important;
+    background-color: #efefee !important;
+    width: 2.05em !important;
+    height: 2.05em !important;
+    line-height: 2.05em !important;
+    left: -3.7em !important;
+    font-size: 20px !important;
+    font-weight: 600;
+    top: -5px !important;
+}
+ul[class*="trx_addons_list_arrow_circled"] {
+    padding: 2.6em 6em 2.5em 7.1em !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.11);
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 0 !important;
+}
+ul[class*="trx_addons_list_arrow_circled"]:hover {
+    box-shadow: 0 0 38px rgba(0, 0, 0, 0.11);
+}
+ul[class*="trx_addons_list_arrow_circled"] h6 {
+    margin-bottom: 0.2412em;
+}
+
+ul[class*="trx_addons_list_result"] {
+    padding: 0;
+}
+ul[class*="trx_addons_list_result"] li {
+    padding-left: 7.7rem;
+    margin-bottom: 1.7rem;
+}
+ul[class*="trx_addons_list_result"] li:before {
+    display: none;
+}
+ul[class*="trx_addons_list_result"] li> strong {
+    position: absolute;
+    left: 0;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+ul[class*="trx_addons_list_result"] li:nth-child(3)> strong {
+    color: #ffffff;
+    background-color: #98cb2b;
+    -webkit-border-radius: 33px;
+    -ms-border-radius: 33px;
+    border-radius: 33px;
+    padding: 3px 14px;
+    margin-top: -2px;
+}
+
+

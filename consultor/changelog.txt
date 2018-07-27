@@ -1,0 +1,15 @@
+Version 1.1
+    Add GDPR update
+    Add GDPR Framework plugin
+    Add alert install demodate
+    Updated plugins to their latest versions
+    Corrected Demo data
+    Demo data updated
+
+Version 1.0.2
+    Updated plugins to their latest versions
+    Corrected Demo data
+    Demo data updated
+
+
+Release – v.1.0
